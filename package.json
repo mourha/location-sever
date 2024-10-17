@@ -1,0 +1,17 @@
+{
+  "name": "sever-programming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "muhammad",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nedb": "^1.8.0",
+    "nodemon": "^3.1.7"
+  }
+}

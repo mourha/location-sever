@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New html</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>my db</h1>
+
+    <script>
+        async  function callDB (){
+            const response  = await fetch("/api")
+            const data = await response.json()
+
+            for ( items of data ){
+                const root  = document.createElement('div')
+                const userName  = document.createElement('p')
+                const lot  = document.createElement('p')
+                const lat  = document.createElement('p')
+                const timestapm  = document.createElement('p')
+                
+                userName.innerHTML = items.userName
+                lot.innerHTML = items.lot
+                lat.innerHTML = items.lat
+                timestapm.innerHTML = items.timestapmp
+
+                root.append(lat,lot, userName)
+                document.body.append(root)
+        root.classList.add("kk")
+
+            }
+        }
+        callDB()
+    </script>
+</body>
+</html>

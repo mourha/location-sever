@@ -1,0 +1,22 @@
+.hide{
+
+    display: none;
+}
+bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+.kk{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    font-weight: 300;
+}
+.kl{
+   
+}
